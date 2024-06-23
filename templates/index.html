@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <form id="taskForm">
+            <input type="hidden" id="taskId">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" required><br><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" rows="4" required></textarea><br><br>
+            <label for="dueDate">Due Date:</label><br>
+            <input type="date" id="dueDate" required><br><br>
+            <button type="submit">Save Task</button>
+        </form>
+
+        <div id="tasks"></div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
